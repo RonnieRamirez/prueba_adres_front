@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "presupuesto": 10000,
+        "unidad": "Dirección de Medicamentos y Tecnologías en Salud",
+        "tipoBien": "Medicamentos",
+        "cantidad": 10,
+        "valorUnitario": 1000,
+        "valorTotal": 10000,
+        "fechaAdquisicion": "2023-07-20",
+        "proveedor": "Microsoft",
+        "activo": true
+    },
+    {
+        "id": 2,
+        "presupuesto": 10000,
+        "unidad": "Dirección de Tecnologia",
+        "tipoBien": "Office 365",
+        "cantidad": 100,
+        "valorUnitario": 100,
+        "valorTotal": 10000,
+        "fechaAdquisicion": "2023-07-21",
+        "proveedor": "Microsoft",
+        "activo": true
+    },
+    {
+        "id": 3,
+        "presupuesto": 10000,
+        "unidad": "Dirección de Medicamentos y Tecnologías en Salud",
+        "tipoBien": "Vacunas",
+        "cantidad": 8,
+        "valorUnitario": 100,
+        "valorTotal": 800,
+        "fechaAdquisicion": "2023-07-22",
+        "proveedor": "Laboratorios Bayer SA",
+        "activo": false
+    },
+    {
+        "id": 4,
+        "presupuesto": 10000,
+        "unidad": "Dirección de Tecnologia",
+        "tipoBien": "Teclados",
+        "cantidad": 10,
+        "valorUnitario": 10000,
+        "valorTotal": 100000,
+        "fechaAdquisicion": "2023-07-23",
+        "proveedor": "K-tronix",
+        "activo": true
+    },
+    {
+        "id": 5,
+        "presupuesto": 10000,
+        "unidad": "Dirección Financiera",
+        "tipoBien": "Sistema Facturación",
+        "cantidad": 1,
+        "valorUnitario": 2000000,
+        "valorTotal": 2000000,
+        "fechaAdquisicion": "2023-07-22",
+        "proveedor": "SIIGO",
+        "activo": true
+    }
+]

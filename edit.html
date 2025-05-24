@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Adquisición</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <img src="logo.png" alt="ADRES" />
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Editar / Crear Requerimiento de Adquisición</h1>
+            <form id="edit-form" onsubmit="return actualizarRequerimiento()">
+                <input type="hidden" id="edit-id">
+                <label>
+                    Presupuesto:
+                    <input type="number" id="edit-presupuesto" required min="0">
+                </label>
+                <label>
+                    Unidad:
+                    <input type="text" id="edit-unidad" required minlength="5" maxlength="100">
+                </label>
+                <label>
+                    Tipo Bien:
+                    <input type="text" id="edit-tipoBien" required minlength="5" maxlength="100">
+                </label>
+                <label>
+                    Cantidad:
+                    <input type="number" id="edit-cantidad" required min="0" oninput="calcularValorTotal()">
+                </label>
+                <label>
+                    Valor Unitario:
+                    <input type="number" id="edit-valorUnitario" required min="0" oninput="calcularValorTotal()">
+                </label>
+                <label>
+                    Valor Total:
+                    <input type="number" id="edit-valorTotal" required min="0">
+                </label>
+                <label>
+                    Fecha Adquisición:
+                    <input type="date" id="edit-fechaAdquisicion" required min="0">
+                </label>
+                <label>
+                    Proveedor:
+                    <input type="text" id="edit-proveedor" required minlength="5" maxlength="100">
+                </label>
+              <!--   <label>
+                    Activo:
+                    <input type="checkbox" id="edit-activo">
+                </label> -->
+                <button type="submit">Actualizar</button>
+            </form>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

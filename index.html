@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listado</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="top-header">
+        <img src="logo.png" alt="ADRES" />
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href="index.html">Adquisiciones</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <header>
+                <h1>Requerimientos de Adquisiciones</h1>
+            
+            </header>
+             <button onclick="editar(0)">Crear Requerimiento</button>
+                <input type="text" id="filter" placeholder="Filtrar..." oninput="filtrarRequerimientos()" />
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tipo Bien / Servicio</th>
+                        <th>Unidad</th>
+                        <th>Cantidad</th>
+                        <th>Valor Total</th>
+                        <th>Activo</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos">
+                </tbody>
+            </table>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
